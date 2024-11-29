@@ -3,7 +3,7 @@ import Card from "./components/Card";
 
 function App() {
   return (
-    <div >
+    <div className="w-full h-screen bg-zinc-300 flex gap-4 item-center justify-center">
       < Card />
     </div>
   )
