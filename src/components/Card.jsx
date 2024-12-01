@@ -3,7 +3,7 @@ import React from 'react'
 function Card() {
   return (
     <div>
-      Azure trial
+      Card
     </div>
   )
 }
