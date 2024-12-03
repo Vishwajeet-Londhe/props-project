@@ -18,7 +18,7 @@ function App() {
       <Navbar />
       <div className="px-20 flex gap-10 flex-wrap">
         {songData.map(obj=>(
-          <Card />
+          <Card data={obj} />
         ))}
       </div>
     </div>
