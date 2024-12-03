@@ -11,19 +11,15 @@ function App() {
     {image: "https://images.unsplash.com/photo-1505282722405-413748d3de7a?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", SongName:"Papa Mera Papa", ArtistName:"Shreya Ghoshal" ,added:false},
   ];
 
+  const [songData, setSongData] = useState(data);
+
   return (
     <div className="w-full h-screen bg-zinc-300">
       <Navbar />
       <div className="px-20 flex gap-10 flex-wrap">
-        < Card />
-        < Card />
-        < Card />
-        < Card />
-        < Card />
-        < Card />
-        < Card />
-        < Card />
-        < Card />
+        {songData.map(obj=>(
+          <Card />
+        ))}
       </div>
     </div>
   )
