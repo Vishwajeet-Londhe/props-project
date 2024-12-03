@@ -8,7 +8,7 @@ function Card() {
         <h3 className='text-xl font-semibold'>Song Name</h3>
         <h6 className='text-sm'>Artist Name</h6>
       </div>
-      <button className='px-4 py-3 bg-orange-600 absolute bottom-0 whitespace-nowrap left-1/2 -translate-x-[50%] translate-y-[50%] text-white text-xs rounded-full '>Add to Favourite</button>
+      <button className='px-4 py-3 bg-orange-600 absolute bottom-0 whitespace-nowrap left-1/2 -translate-x-[50%] translate-y-[50%] text-white text-xs rounded-full'>Add to Favourite</button>
     </div>
   )
 }

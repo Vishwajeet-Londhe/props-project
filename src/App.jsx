@@ -6,7 +6,17 @@ function App() {
   return (
     <div className="w-full h-screen bg-zinc-300">
       <Navbar />
-      < Card />
+      <div className="px-20 flex gap-10">
+        < Card />
+        < Card />
+        < Card />
+        < Card />
+        < Card />
+        < Card />
+        < Card />
+        < Card />
+        < Card />
+      </div>
     </div>
   )
 }
