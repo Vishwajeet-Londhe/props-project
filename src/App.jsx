@@ -12,6 +12,9 @@ function App() {
   ];
 
   const [songData, setSongData] = useState(data);
+  const handleClick = ()=>{
+    
+  }
 
   return (
     <div className="w-full h-screen bg-zinc-300">
