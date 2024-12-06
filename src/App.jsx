@@ -12,16 +12,16 @@ function App() {
   ];
 
   const [songData, setSongData] = useState(data);
-  const handleClick = ()=>{
-    alert("alert ho gaya reee")
+  const handleClick = (index)=>{
+    alert(index);
   }
 
   return (
     <div className="w-full h-screen bg-zinc-300">
       <Navbar />
       <div className="px-20 flex gap-10 flex-wrap">
-        {songData.map(obj=>(
-          <Card data={obj} handleClick={handleClick} />
+        {songData.map((obj, index)=>(
+          <Card data={obj} handleClick={handleClick} index={index} />
         ))}
       </div>
     </div>
