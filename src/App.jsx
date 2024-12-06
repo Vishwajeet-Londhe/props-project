@@ -13,7 +13,7 @@ function App() {
 
   const [songData, setSongData] = useState(data);
   const handleClick = ()=>{
-    
+    alert("alert ho gaya reee")
   }
 
   return (
@@ -21,7 +21,7 @@ function App() {
       <Navbar />
       <div className="px-20 flex gap-10 flex-wrap">
         {songData.map(obj=>(
-          <Card data={obj} />
+          <Card data={obj} handleClick={handleClick} />
         ))}
       </div>
     </div>

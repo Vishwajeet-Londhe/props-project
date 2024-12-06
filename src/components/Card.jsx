@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Card({data}) {
+function Card({data,handleClick}) {
 
   const {image,SongName,ArtistName,added} = data;
 
@@ -13,7 +13,7 @@ function Card({data}) {
         <h3 className='text-xl font-semibold'>{SongName}</h3>
         <h6 className='text-sm'>{ArtistName}</h6>
       </div>
-      <button className= {`px-4 py-3 ${added === false ? "bg-orange-600" : "bg-teal-700"} absolute bottom-0 whitespace-nowrap left-1/2 -translate-x-[50%] translate-y-[50%] text-white text-xs rounded-full`}>{added === false ? "Add to Favourite" : "Added"}</button>
+      <button onClick={handleClick} className= {`px-4 py-3 ${added === false ? "bg-orange-600" : "bg-teal-700"} absolute bottom-0 whitespace-nowrap left-1/2 -translate-x-[50%] translate-y-[50%] text-white text-xs rounded-full`}>{added === false ? "Add to Favourite" : "Added"}</button>
     </div>
   )
 }
